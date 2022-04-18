@@ -3,18 +3,16 @@ package check;
 import constants.Constants;
 
 public class Check {
-	private static String firstName = "1";
-	private static String lastName = "2";
+	private static String firstName = "矢部";
+	private static String lastName = "裕晃";
 	
-	private static String printName = firstName + lastName;
-	
-	public void printName() {
-		System.out.println("printNameメソッド" + "　→　" + printName);
+	private void printName(String firstName, String lastName) {
+		System.out.println("printNameメソッド" + "　→　" + firstName + lastName);
 	}
 
 	public static void main(String[] args) {
 		Check name = new Check();
-		name.printName();
+		name.printName(firstName, lastName);
 		Pet hoge = new Pet(Constants.CHECK_CLASS_HOGE, Constants.CHECK_CLASS_HOGE);
 		hoge.introduce();
 		Pet r2d2 = new RobotPet(Constants.CHECK_CLASS_R2D2, Constants.CHECK_CLASS_LUKE);
