@@ -13,9 +13,9 @@ public class Check {
 	public static void main(String[] args) {
 		Check name = new Check();
 		name.printName(firstName, lastName);
-		Pet hoge = new Pet(Constants.CHECK_CLASS_HOGE, Constants.CHECK_CLASS_HOGE);
+		Pet hoge = new Pet(Constants.CHECK_CLASS_JAVA, Constants.CHECK_CLASS_HOGE);
 		hoge.introduce();
-		Pet r2d2 = new RobotPet(Constants.CHECK_CLASS_R2D2, Constants.CHECK_CLASS_LUKE);
+		RobotPet r2d2 = new RobotPet(Constants.CHECK_CLASS_R2D2, Constants.CHECK_CLASS_LUKE);
 		r2d2.introduce();		
 	}
 }
