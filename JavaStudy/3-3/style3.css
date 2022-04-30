@@ -75,13 +75,14 @@
   }
   .header {
     height: 200px;
-    display: block;
+    flex-direction: column;
   }
-  .box1, .box2, .box3{
-    margin-left: 70px;
+  .box3{
+    margin-right: 0px;
+    margin-bottom: 10px;
   }
   .center{
-    display: block;
+    flex-direction: column;
   }
   .center-left{
     width: 200px;
@@ -96,6 +97,6 @@
     margin-left: 30px;
   }
   .center1{
-    margin-top: 0px;
+    margin-top: 20px;
   }
 }
