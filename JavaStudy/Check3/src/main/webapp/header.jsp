@@ -8,8 +8,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="/WebContent/css/style.css">
 <title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href='<spring:url value="/WebContent/css/style.css" />' />
 </head>
 <body>
 
