@@ -22,7 +22,7 @@ public class Nanami implements OrderFromMotoki {
 	 */
 	
 	  // 司令をこなす！
-	 private void submitOrder(final int shoriFlg) {
+	 public void submitOrder(final int shoriFlg) {
 	 String nameAnd = name + "、";
 	 
 	 if (shoriFlg == 0) {
