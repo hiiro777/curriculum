@@ -1,6 +1,5 @@
 package exception;
- 
-import java.util.Objects;
+
 import java.util.Scanner;
  
 /**
@@ -61,14 +60,13 @@ public class ExException {
                     case CONST_EXCEPTION_TRIGER_NULL:
                     // 問①: 強制的に「NullPointerException」を発生させるメソッドを作成し、呼び出しなさい。
                     // 問①は最下部にもあります。
-                    if (Objects.isNull(sc))
-                    	throw new NullPointerException("ヌルポです。");
+                    nullCheck(null);
                     break;
                     case CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS:
                     // 問②: 「throw」を使用せずに「ArrayIndexOutOfBoundsException」を発生させる処理を記述しなさい。
                     // Tips: ご自身で配列を準備してください（使用する配列の型、要素数は自由）
-                    int [] ary = {1,2,3};
-                    System.out.println(ary[3]);
+                    int [] ary = new int[3];
+                    System.out.println(ary[4]);
                     break;
                     case CONST_EXCEPTION_TRIGER_CAST:
                     String castedStrValue = (String) CONST_OBJ_FOR_CLASS_CAST;
@@ -102,7 +100,11 @@ public class ExException {
      * ルール1: private static void 任意のメソッド名 throws 上位へ投げるExceptionクラス名 { NullPointerExceptionを発生させる処理 }
      * ルール2: 例外発生時に設定するメッセージは、定義済みの定数から適当なものを指定してください。
      */
-    // ここへ記述
+	private static void nullCheck(String nullSell) throws NullPointerException{
+		if (nullSell == null) {
+			throw new NullPointerException(CONST_MSG_NULLPO);
+		}
+	}
 
     /**
      * 例外処理のメッセージを出力
