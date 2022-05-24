@@ -14,7 +14,8 @@
 <body>
 
 	<div id="header">
-		<div id="label1">login</div>><div id="label2"><%= formatDate %></div>>
+		<div id="label1">login</div>
+		<div id="label2"><%= formatDate %></div>
 	</div>
 
 </body>

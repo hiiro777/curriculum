@@ -10,16 +10,16 @@
 <body>
 	<div>
 		<%@ include file="header.jsp" %>
-		<table>
-			<tr>
-				<th>name</th>
-				<td></td>
-			</tr>
-			<tr>
-				<th>id</th>
-				<td></td>
-			</tr>
-		</table>
+		<ul>
+			<li id = "name">
+				<label for = "name">name</label>
+				<input type = "text" name = "name" value = "" size = "20">
+			</li>
+			<li id = "id">
+				<label for = "id">id</label>
+				<input type = "text" name = "id" value = "" size = "20">
+			</li>
+		</ul>
 		<%@ include file="footer.jsp" %>
 	</div>
 </body>
