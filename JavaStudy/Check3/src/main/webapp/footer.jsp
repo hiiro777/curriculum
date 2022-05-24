@@ -10,7 +10,7 @@
 <body>
 
 	<div id= footer>
-		<div id="label3">hoge.Inc</div>>
+		<div id="label3">hoge.Inc</div>
 	</div>
 
 </body>
