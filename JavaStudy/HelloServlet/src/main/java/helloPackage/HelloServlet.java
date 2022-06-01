@@ -1,5 +1,4 @@
-package helloPachage;
-
+package helloPackage;
 
 import java.io.IOException;
 import java.io.PrintWriter;
