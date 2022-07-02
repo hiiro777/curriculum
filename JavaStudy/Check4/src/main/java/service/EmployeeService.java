@@ -31,11 +31,11 @@ public class EmployeeService {
  
   // 問② 入力された値で、UPDATEする文
  /** ・SQL UPDATE文 */
- private static final String SQL_UPDATE = "update Employee_Table set login_time = ? where id = ?";
+ private static final String SQL_UPDATE = "update employee_table set login_time = ? where id = ?";
  
   // 問③ 入力されたIDとPassWordをキーにして、検索するSELECT文
  /** ・SQL SELECT文 */
- private static final String SQL_SELECT = "select * Employee_Table where id = ? and password = ?";
+ private static final String SQL_SELECT = "select * from employee_table where id = ? and password = ?";
  
  EmployeeBean employeeDate = null;
  
@@ -80,8 +80,7 @@ public class EmployeeService {
  preparedStatement = connection.prepareStatement(SQL_SELECT);
   //問⑥ 一番目のindexにIDをセットしてください。2番目のindexにPASSWORDをセット。
  preparedStatement.setString(1, id);
- preparedStatement.setString(2, login_time);
- 
+ preparedStatement.setString(2, password);
   // SQLを実行。実行した結果をresultSetに格納。
  resultSet = preparedStatement.executeQuery();
  
